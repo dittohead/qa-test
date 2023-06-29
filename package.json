@@ -1,0 +1,34 @@
+{
+  "name": "qa-test",
+  "version": "0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn npm-run-all --parallel --race app:dev cy:open",
+    "ci:run": "yarn cypress run",
+    "lint": "yarn eslint ."
+  },
+  "dependencies": {
+    "cypress": "12.16.0"
+  },
+  "devDependencies": {
+    "@types/ws": "8.5.5",
+    "@types/node": "20.3.3",
+    "@types/crypto-js": "4.1.1",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "@faker-js/faker": "8.0.2",
+    "typescript": "5.0.4",
+    "cypress-commands": "3.0.0",
+    "cypress-localstorage-commands": "2.2.3",
+    "cypress-real-events": "1.8.1",
+    "cypress-terminal-report": "5.2.0",
+    "npm-run-all": "4.1.5",
+    "axios": "1.4.0",
+    "eslint": "8.43.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsdoc": "46.4.2",
+    "ws": "8.13.0",
+    "moment": "2.29.4",
+    "crypto-js": "4.1.1"
+  }
+}

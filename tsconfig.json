@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "downlevelIteration": true,
+    "outDir": "./dist/out-tsc",
+    "target": "ES2022",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": true,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+    },
+    "types": [
+      "node",
+      "cypress",
+      "cypress-commands",
+      "cypress-real-events"
+    ],
+    "useDefineForClassFields": false,
+  },
+  "exclude": ["node_modules", "dist"]
+}

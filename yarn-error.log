@@ -1,0 +1,61 @@
+Arguments: 
+  /Users/ad/.nvm/versions/node/v16.14.2/bin/node /Users/ad/.yarn/bin/yarn.js install
+
+PATH: 
+  /Users/ad/.yarn/bin:/Users/ad/.config/yarn/global/node_modules/.bin:/Users/ad/.gem/ruby/2.6.0/bin:/Users/ad/.gem/bin:/Users/ad/.rbenv/shims:/Users/ad/.nvm/versions/node/v16.14.2/bin:/usr/local/opt/node@12/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ad/git/qa-test/node_modules/.bin:/Users/ad/.yarn/bin:/Users/ad/Library/Android/sdk/emulator:/Users/ad/Library/Android/sdk/tools:/Users/ad/Library/Android/sdk/tools/bin:/Users/ad/Library/Android/sdk/platform-tools:/bin:/Users/ad/go/bin:/Users/ad/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ad/git/qa-test/package.json: Unexpected string in JSON at position 315
+      at JSON.parse (<anonymous>)
+      at /Users/ad/.yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/ad/.yarn/lib/cli.js:310:30)
+      at /Users/ad/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "qa-test",
+    "version": "0.1",
+    "license": "MIT",
+    "scripts": {
+      "dev": "yarn npm-run-all --parallel --race app:dev cy:open",
+      "ci:run": "yarn cypress run",
+      "lint": "yarn eslint ."
+    },
+    "dependencies": {
+      "cypress": "12.16.0"
+    },
+    "devDependencies": {
+      "@types/node": "20.3.3"
+      "@typescript-eslint/eslint-plugin": "5.60.1",
+      "@typescript-eslint/parser": "5.60.1",
+      "typescript": "5.1.6",
+      "cypress-commands": "3.0.0",
+      "cypress-localstorage-commands": "2.2.3",
+      "cypress-real-events": "1.8.1",
+      "cypress-terminal-report": "5.2.0",
+      "npm-run-all": "4.1.5",
+      "crypto-js": "4.1.1",
+      "axios": "1.4.0",
+      "eslint": "8.43.0",
+      "eslint-plugin-import": "2.27.5",
+      "eslint-plugin-jsdoc": "46.4.2",
+      "@faker-js/faker": "8.0.2",
+      "npm-run-all": "4.1.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
